@@ -210,7 +210,7 @@ app.post('/twilioSMS', function(req, res){
 app.post('/twilioVoice', function(req, res){ 
 	
 		try {
-			res.send('<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><Say voice=\"woman\">If you would like to be transferred to the resident of this property, please hold. Otherwise, hang up.</Say><Pause length=\"5\"/><Say voice=\"woman\">Transferring you now.  One moment.</Say><Dial>408-940-5747</Dial></Response>');
+			res.send('<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><Say voice=\"woman\">If you would like to be transferred to the resident of this property, please hold. Otherwise, hang up.</Say><Pause length=\"5\"/><Say voice=\"woman\">Transferring you now.  One moment.</Say><Dial>408-XXX-XXXX</Dial></Response>');
 
 		} catch (e) {
 			// An error has occured, handle it, by e.g. logging it
